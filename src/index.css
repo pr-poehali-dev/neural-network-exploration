@@ -97,5 +97,47 @@
 
   body {
     @apply bg-background text-foreground;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
   }
+}
+
+/* Тут и Там — дефолтная тёмная тема */
+:root {
+  --tnt-bg: #17212b;
+  --tnt-sidebar: #232e3c;
+  --tnt-card: #2b3a4a;
+  --tnt-input: #1e2c3a;
+  --tnt-accent: #2cb2e4;
+  --tnt-accent-hover: #1a9fd3;
+  --tnt-text: #ffffff;
+  --tnt-text-muted: #8c9ab0;
+  --tnt-border: #0d1117;
+  --tnt-msg-out: #2b5278;
+  --tnt-msg-in: #182533;
+  --tnt-online: #3ba55c;
+  --tnt-read: #4fc3f7;
+}
+
+/* Плавный скролл */
+* {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* Убираем отступы на мобильных */
+html,
+body,
+#root {
+  height: 100%;
+  height: -webkit-fill-available;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Скрываем скроллбар но оставляем прокрутку */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }

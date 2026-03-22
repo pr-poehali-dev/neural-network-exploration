@@ -1,0 +1,1 @@
+ALTER TABLE tnt_users ADD COLUMN password_hash TEXT NOT NULL DEFAULT '';
